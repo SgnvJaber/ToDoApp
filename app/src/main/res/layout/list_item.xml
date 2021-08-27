@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Layout for a single list item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="left"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/listTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Todo Title 0"
+            android:textColor="#1D1D1D"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/listDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is a description of Todo 1"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/listDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99/99/9999"
+            android:textSize="14dp"
+
+            />
+
+        <TextView
+            android:id="@+id/listTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16:18"
+            android:textSize="14dp"
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
